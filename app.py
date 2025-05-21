@@ -16,7 +16,7 @@ async def on_message(message: cl.Message):
     Retrieves the Groq API key, initializes the Groq client,
     makes a chat completion request, and sends the response back to the user.
     """
-    api_key = os.environ.get("GROQ_API_KEY")
+    api_key = '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'
 
     if not api_key:
         await cl.Message(content="GROQ_API_KEY environment variable not set. Please set it and try again.").send()
